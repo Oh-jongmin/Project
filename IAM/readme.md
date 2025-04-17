@@ -6,13 +6,10 @@
 
 ## 🧭 IAM 구조 다이어그램
 
-S3 프로젝트 IAM 권한 구조 
-└── 관리자 (팀장 - kdt16) 
-    ├── 권한: AdministratorAccess ├── IAM 그룹 관리 └── IAM 정책 할당 / 사용자 권한 위임
-    ├── IAM 그룹: KDT-Common
-    │   ├── 권한: 
-    │   │   ├─ IAMReadOnlyAccess
-    │   │   ├─ EC2/VPC/S3/SSM Describe 권한
+├── IAM 그룹: KDT-Basic
+│   ├── 권한: 
+│   │   ├─ IAMReadOnlyAccess
+│   │   ├─ EC2/VPC/S3/SSM Describe 권한
 │   │   └─ CloudWatchReadOnlyAccess
 │   └── 구성원: kdt017, kdt018, kdt019
 
@@ -36,7 +33,6 @@ S3 프로젝트 IAM 권한 구조
 
 └── 모든 사용자 공통 개별 권한:
     └── IAMUserChangePassword
-
 
 ---
 
